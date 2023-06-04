@@ -1,0 +1,21 @@
+.footer{
+    font-weight: 700;
+   
+}
+.ft-1{
+    font-family: cursive;
+}
+.ft-1 span{
+ color: red;
+}
+
+.mobile-menu li a{
+    text-decoration: none;
+  
+}
+
+@media (max-width:450px){
+    .footer-m {
+        width: 120%;
+    }  
+}

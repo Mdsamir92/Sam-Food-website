@@ -1,0 +1,150 @@
+.container{
+    /* padding: 0 6rem; */
+    margin: 10px;
+    text-align: center;
+    
+}
+.container a{
+    text-decoration: none;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 6rem 10px;
+}
+
+.grid_card{
+padding: 2rem 2rem;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+background-color: #fff;
+}
+
+.grid_card span {
+display: inline-block;
+transition: transform 200ms;
+}
+
+.grid_card h2{
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+
+.grid_card p{
+margin: 0;
+}
+
+.grid_card p:last-child{
+margin-bottom: 3.2rem;
+}
+
+.grid_card .last_para{
+margin-bottom: 3.2rem;
+}
+
+.grid_card i{
+font-size: 3.2rem;
+color: #e50914;
+}
+
+
+.btn {
+    width: 60%;
+}
+
+@media (max-width:768px){
+     
+    .input-filed{
+        width: fit-content;
+   
+          }
+          .input-filed h5{
+           font-size: 16px;
+       }
+    
+           .btn{
+         
+               font-size: 20px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: fit-content;
+               padding: 10px;
+               margin-right:40px ;          
+       } 
+   
+       .input-filed h5{
+           font-size: 18px;
+       }
+   
+       .grid{
+           
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 3rem;
+           margin: 6rem 0px;
+           
+       }
+    
+          
+       .grid_card h2{
+           font-size: 30px;
+           margin-right: 40px;
+        }
+        .grid_card i{
+           font-size: 25px;
+           margin-right: 20px;
+        }
+           
+       
+   
+    .iframe{
+       width: fit-content;
+        }
+    
+   
+     }
+     
+     @media (max-width:500px){
+     
+   /* contact us */
+       .input-filed{ 
+          width:50%;
+         
+       }
+         .btn{
+            padding: 10px;
+             font-size: 15px;
+             width: fit-content;
+             margin-right: 80px;
+            
+     } 
+
+     .input-filed h5{
+        font-size: 18px;
+    }
+    
+     .grid{
+           
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 3rem;
+       margin: 6rem 0px;
+       margin-left: 35px;
+   
+      
+   }
+   
+   .grid_card h2{
+       font-size: 30px;
+       margin-right: 40px;
+    }
+    .grid_card i{
+       font-size: 25px;
+       margin-right: 25px;
+    }
+       
+   }
