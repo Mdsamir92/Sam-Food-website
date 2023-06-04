@@ -146,5 +146,10 @@ color: #e50914;
        font-size: 25px;
        margin-right: 25px;
     }
+         
+        .footer-m {
+            width: 120%;
+        }  
+       
        
    }
