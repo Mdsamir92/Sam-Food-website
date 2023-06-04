@@ -122,14 +122,7 @@ const Header = () => {
             </ul>
             </Box>
             
-            {/* <Box className="search" sx={{mr:2,backgroundColor:"white",width:"40%",position:"relative",borderRadius:"10px",
-            display:{xs:"block",sm:"none"} }}>
-             
-             <SearchIcon  className='searchIcon' sx={{color:"black",cursor:"pointer"}}/>
-             
-             <InputBase placeholder='Search' className='input'  value={search}
-             inputProps={{"aria-details":"search"}}  onChange={handleSearch}/>
-             </Box> */}
+        
 
                   <Badge badgeContent={getdata.length} color="primary"
                         id="basic-button"
