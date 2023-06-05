@@ -1,5 +1,5 @@
+
 .container{
-    /* padding: 0 6rem; */
     margin: 10px;
     text-align: center;
     
@@ -41,9 +41,6 @@ margin: 0;
 margin-bottom: 3.2rem;
 }
 
-.grid_card .last_para{
-margin-bottom: 3.2rem;
-}
 
 .grid_card i{
 font-size: 3.2rem;
@@ -64,14 +61,8 @@ color: #e50914;
         grid-template-columns: 1fr;
         gap: 3rem;
         margin: 6rem 0px;
-        margin-right: 100px;
-      
-       
-    }
-    .container{
-        margin-right:70px;
-    }
-          
+    
+    }  
        .grid_card h2{
            font-size: 30px;
            margin-right: 40px;
@@ -109,13 +100,12 @@ color: #e50914;
      
      @media (max-width:500px){
      
-   /* contact us */
       
          .btn{
             padding: 10px;
              font-size: 15px;
              width: fit-content;
-             /* margin-right: 80px; */
+         
             
      } 
 
@@ -145,7 +135,8 @@ color: #e50914;
    
     .iframe{
         width: fit-content;
-        margin-right: 60px;
+       
          }
 
    }
+
