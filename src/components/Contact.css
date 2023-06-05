@@ -1,4 +1,3 @@
-
 .container{
     margin: 10px;
     text-align: center;
@@ -17,7 +16,7 @@
 }
 
 .grid_card{
-padding: 2rem 2rem;
+padding: 1rem 1rem;
 text-align: center;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 background-color: #fff;
@@ -119,7 +118,7 @@ color: #e50914;
        display: grid;
        grid-template-columns: 1fr;
        gap: 3rem;
-       margin: 6rem 0px;
+       margin: 6rem 30px;
       
    
    }
@@ -139,4 +138,5 @@ color: #e50914;
          }
 
    }
+
 
