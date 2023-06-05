@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Button } from "react-bootstrap"
 import Col from 'react-bootstrap/Col';
@@ -18,7 +19,7 @@ function ContactUs() {
           <div className='input-filed'>
             <h5>Send you Details</h5>
             <Form.Group as={Row} className="mb-3 " controlId="formHorizontalName" >
-              <Form.Label column sm={4} >
+              <Form.Label column sm={8} >
                 Name
               </Form.Label>
               <Col sm={8}>
@@ -26,7 +27,7 @@ function ContactUs() {
               </Col>
             </Form.Group>
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-              <Form.Label column sm={4}>
+              <Form.Label column sm={8}>
                 Email
               </Form.Label>
               <Col sm={8}>
@@ -35,7 +36,7 @@ function ContactUs() {
             </Form.Group>
 
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-              <Form.Label column sm={4}>
+              <Form.Label column sm={8}>
                 Password
               </Form.Label>
               <Col sm={8}>
@@ -43,7 +44,7 @@ function ContactUs() {
               </Col>
             </Form.Group>
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalNumber">
-              <Form.Label column sm={4}>
+              <Form.Label column sm={8}>
                 Phone
               </Form.Label>
               <Col sm={8}>
@@ -54,7 +55,7 @@ function ContactUs() {
             <textarea
               name="message"
               placeholder='Type here'
-              cols="30"
+              cols="25"
                 rows="8"
               autoComplete="off"
               required>
