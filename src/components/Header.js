@@ -134,9 +134,9 @@ const Header = () => {
                   </Badge>
 
                     <IconButton color='inherit' aria-label='open drawer' edge="start"
-                     sx={{ mr: 2, display: { sm: "none" } }}
+                     sx={{  display: { sm: "none" } }}
                      onClick={handleDrawerToggle}>
-                     <MenuIcon style={{color:"black",marginLeft:"15px"}} />
+                     <MenuIcon style={{color:"black",marginLeft:"23px"}} />
                    </IconButton>
 
           </Toolbar>
