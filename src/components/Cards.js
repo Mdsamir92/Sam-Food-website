@@ -31,11 +31,11 @@ const Cards = () => {
   
 
   return (
-    <div className='mt-3'>
+    <div className='container mt-3'>
       <h2 style={{textAlign:"center",marginTop:"70px"}}>Order your food now...</h2>
      
       <div style={{display:"grid",placeItems:"center"}}>
-          <Box className="search" sx={{mt:2,backgroundColor:"pink",width:"30%",position:"relative",borderRadius:"10px",
+          <Box className="search" sx={{mt:2,backgroundColor:"pink",width:"25%",position:"relative",borderRadius:"10px",
             }}>
              
              <SearchIcon  className='searchIcon' sx={{color:"black",cursor:"pointer"}}/>
