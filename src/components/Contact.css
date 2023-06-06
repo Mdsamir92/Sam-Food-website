@@ -118,7 +118,8 @@ color: #e50914;
        display: grid;
        grid-template-columns: 1fr;
        gap: 3rem;
-       margin: 6rem 30px;
+       margin: 6rem 25px;
+       margin-right: 40px;
       
    
    }
@@ -134,7 +135,7 @@ color: #e50914;
    
     .iframe{
         width: fit-content;
-       
+         margin-right: 30px; 
          }
 
    }
