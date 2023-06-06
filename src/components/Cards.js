@@ -31,7 +31,7 @@ const Cards = () => {
   
 
   return (
-    <div className='container mt-3'>
+    <div className='mt-3'>
       <h2 style={{textAlign:"center",marginTop:"70px"}}>Order your food now...</h2>
      
       <div style={{display:"grid",placeItems:"center"}}>
