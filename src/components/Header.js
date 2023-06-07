@@ -136,7 +136,7 @@ const Header = () => {
                     <IconButton color='inherit' aria-label='open drawer' edge="start"
                      sx={{  display: { sm: "none" } }}
                      onClick={handleDrawerToggle}>
-                     <MenuIcon style={{color:"black",marginLeft:"10px"}} />
+                     <MenuIcon style={{color:"black"}} />
                    </IconButton>
 
           </Toolbar>
