@@ -149,16 +149,16 @@ body{
         width: 16rem;
     }
 
-
    .input{
-    padding-left:28px ;
-   
+    padding-left:25px ;
+ 
+  
 }
 
    .searchIcon{
     position: absolute;
     margin-top: 5px;
-    margin-left: 6px;
+    margin-left: 4px;
     
 }
 
