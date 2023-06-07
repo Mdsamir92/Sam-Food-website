@@ -11,7 +11,7 @@ function ContactUs() {
   return (
 
 
-
+<div>
 
        <div className='container'>
         <div className='grid'>
@@ -47,7 +47,7 @@ function ContactUs() {
 
     </div>
 
-
+</div>
   )
 }
 
