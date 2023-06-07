@@ -11,63 +11,7 @@ function ContactUs() {
   return (
 
 
-    <div style={{ display: "grid", placeItems: "center" }}>
-      <div style={{ margin: "80px", padding: "40px", width: "65%", marginTop: "80px",marginLeft:"20px", boxShadow: "-10px  10px  10px  5px grey", display: "grid", placeItems: "center" }}>
 
-        <Form action="https://formspree.io/f/xeqdqalv" method="POST" className='form' >
-          <div className='input-filed'>
-            <h5>Send you Details</h5>
-            <Form.Group as={Row} className="mb-3 " controlId="formHorizontalName" >
-              <Form.Label column sm={8} >
-                Name
-              </Form.Label>
-              <Col sm={8}>
-                <Form.Control name="name" required type="name" placeholder="Enter Name..." />
-              </Col>
-            </Form.Group>
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-              <Form.Label column sm={8}>
-                Email
-              </Form.Label>
-              <Col sm={8}>
-                <Form.Control name="email" required type="email" placeholder="Enter Email..." />
-              </Col>
-            </Form.Group>
-
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-              <Form.Label column sm={8}>
-                Password
-              </Form.Label>
-              <Col sm={8}>
-                <Form.Control name="password" required type="password" placeholder="Enter Password..." />
-              </Col>
-            </Form.Group>
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalNumber">
-              <Form.Label column sm={8}>
-                Phone
-              </Form.Label>
-              <Col sm={8}>
-                <Form.Control name="number" required type="number" placeholder=" Enter Number..." />
-              </Col>
-            </Form.Group>
-
-            <textarea
-              name="message"
-              placeholder='Type here'
-              cols="20"
-                rows="8"
-              autoComplete="off"
-              required>
-            </textarea>
-
-
-            <div className='btn'>
-              <Button type="submit" style={{ width: "60%" }}>SEND</Button>
-            </div>
-          </div>
-        </Form>
-        <br />
-      </div>
 
        <div className='container'>
         <div className='grid'>
