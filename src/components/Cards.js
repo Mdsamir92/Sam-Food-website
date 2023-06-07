@@ -40,7 +40,7 @@ const Cards = () => {
              
              <SearchIcon  className='searchIcon' sx={{color:"black",cursor:"pointer"}}/>
              
-             <InputBase placeholder='Search' className='input'  
+             <InputBase placeholder='Search...' className='input'  
              inputProps={{"aria-details":"search"}}  onChange={handleSearch} />
              </Box>
              </div>
