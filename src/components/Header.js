@@ -130,13 +130,13 @@ const Header = () => {
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick} sx={{cursor:"pointer"}} >
-                        <ShoppingCartIcon sx={{ color: "black" ,cursor:"pointer",marginRight:"15px"}}/>
+                        <ShoppingCartIcon sx={{ color: "black" ,cursor:"pointer"}}/>
                   </Badge>
 
                     <IconButton color='inherit' aria-label='open drawer' edge="start"
                      sx={{  display: { sm: "none" } }}
                      onClick={handleDrawerToggle}>
-                     <MenuIcon style={{color:"black"}} />
+                     <MenuIcon style={{color:"black",marginLeft:"15px"}} />
                    </IconButton>
 
           </Toolbar>
