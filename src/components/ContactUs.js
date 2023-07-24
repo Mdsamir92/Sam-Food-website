@@ -38,7 +38,7 @@ function ContactUs() {
             <Link to="mailto:mdsamir13968@gmail.com">  Ask the community <span>-&gt;</span></Link>
           </div>
         </div>
-      </div> 
+    
 
     
 <div  style={{ margin: "40px", padding: "30px ",display:"flex",alignItems:"center", justifyContent: "center", width: "50%", boxShadow: "-10px  10px  10px  5px grey", backgroundColor: "violet" }}>
