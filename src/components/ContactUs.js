@@ -12,8 +12,8 @@ function ContactUs() {
 
 
 
-<div>
-       <div className='container'>
+
+       <div>
         <div className='grid'>
           <div className="grid_card">
             <i> 💌 </i>
