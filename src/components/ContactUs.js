@@ -8,6 +8,20 @@ import "./Contact.css"
 
 
 function ContactUs() {
+
+
+   const [input, setInput] = useState({
+    email: "",
+    password: "",
+    password:"",
+    number:"",
+  });
+
+  
+  function handleLogin(e) {
+    e.preventDefault();
+  }
+  
   return (
 
 
