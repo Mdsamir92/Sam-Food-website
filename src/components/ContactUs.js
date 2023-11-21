@@ -13,9 +13,10 @@ function ContactUs() {
    
 <div>
     <div style={{ display: "grid", placeItems: "center" }}>
-      <div style={{ margin: "80px", padding: "40px", width: "70%", marginTop: "80px",marginLeft:"20px", boxShadow: "-10px  10px  10px  5px grey", display: "grid", placeItems: "center" }}>
+      <div className='form-container' style={{background:"rgba(218, 38, 173, 0.50)", boxShadow: "-10px 10px 10px 5px grey", backdropFilter: "blur(20px)", padding:" 40px 50px",
+       borderRadius:" 25px",marginTop:"80px"}}>
 
-        <Form action="https://formspree.io/f/xeqdqalv" method="POST" className='form' >
+      <Form action="https://formspree.io/f/xeqdqalv" method="POST" className='form' >
           <div className='input-filed'>
             <h5>Send you Details</h5>
             <Form.Group as={Row} className="mb-3 " controlId="formHorizontalName" >
@@ -52,25 +53,15 @@ function ContactUs() {
               </Col>
             </Form.Group>
 
-            <textarea
-              name="message"
-              placeholder='Type here'
-              cols="20"
-                rows="6"
-              autoComplete="off"
-              required>
-            </textarea>
-
 
             <div className='btn'>
               <Button type="submit" style={{ width: "60%" }}>SEND</Button>
             </div>
           </div>
         </Form>
-        <br />
-      </div>
-   
-</div>
+
+        </div>
+        </div>
 
        <div >
         <div className='grid'>
@@ -108,10 +99,11 @@ function ContactUs() {
     </div>
 
 
+
+
 </div>
 
   )
 }
 
 export default ContactUs
-
