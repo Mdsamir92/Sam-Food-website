@@ -84,7 +84,9 @@ color: #e50914;
        .input-filed h5{
            font-size: 18px;
        }
-
+.form-container{
+    margin: 10px 50px;
+}
    
      }    
 
