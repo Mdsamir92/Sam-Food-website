@@ -125,30 +125,17 @@
 
     .headerContainer h1 {
         
-        font-size: 25px;
-        font-weight: 700;
-        margin-right: 30px;
-        color:red;
+ display:none;
     
     }
 
     .headerContainer p {
-        font-size: 20px;
-        font-weight: 800;
-        color:blue;
-        
+        display:none;
 
     }
 
     .headerContainer button {
-        font-size: 18px;
-        background-color: red;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        font-family: 'Roboto', sans-serif;
+    display:none;
 
     }
 
