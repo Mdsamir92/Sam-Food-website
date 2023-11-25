@@ -100,7 +100,7 @@
         height: 25vh;
         width: 30vh;
         margin: 10px 10px;
-        margin-left:20px;
+        margin-left:25px;
      }
 
     .img-text h3 {
@@ -126,13 +126,14 @@
         font-size: 25px;
         font-weight: 700;
         margin-right: 30px;
+        color:gold;
     
     }
 
     .headerContainer p {
         font-size: 20px;
         font-weight: 700;
-      
+        color:pink;
 
     }
 
