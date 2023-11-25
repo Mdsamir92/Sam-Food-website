@@ -43,7 +43,7 @@ function Home() {
     <img src='https://img.freepik.com/premium-photo/closeup-juicy-burger-with-fries-it-look-very-delicious-big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-red-onion_620624-6875.jpg'/>
   </div>
 <div className='col-md-4 img-text'> 
-<h3>Food Is An Important Part Of A Balanced Diet</h3>
+<h3>Food Is An Important Part of Balanced Diet</h3>
 
 </div>
 </div>
