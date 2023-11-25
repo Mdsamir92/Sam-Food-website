@@ -38,7 +38,7 @@ const Cardsdata = [
     {
         id: 4,
         rname: "Chicken Burger",
-        imgdata: "https://www.chicken.ca/wp-content/uploads/2013/05/Moist-Chicken-Burgers-1180x580.jpg",
+        imgdata: "https://img.freepik.com/premium-photo/amazing-delicious-cheese-burger_727939-299.jpg",
         address: "fast foodr",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
         somedata: " 300 + order placed from here recently",
