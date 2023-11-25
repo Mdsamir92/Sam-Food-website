@@ -32,7 +32,7 @@ const Header = () => {
       //menu drawer for mobile view
       const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" ,mt:4}}>
-          <Typography color="black" variant='h6' component="div" sx={{ flexGrow: "1", width: 200 }}>
+          <Typography color="black" variant='h6' component="div" sx={{ flexGrow: "1", width: 250 }}>
          
             Sam Restaurant   <FastFoodIcon /></Typography>
 
@@ -136,7 +136,7 @@ const Header = () => {
                     <IconButton color='inherit' aria-label='open drawer' edge="start"
                      sx={{  display: { sm: "none" } }}
                      onClick={handleDrawerToggle}>
-                     <MenuIcon style={{color:"black",marginLeft:"15px"}} />
+                     <MenuIcon style={{color:"black",marginLeft:"20px"}} />
                    </IconButton>
 
           </Toolbar>
