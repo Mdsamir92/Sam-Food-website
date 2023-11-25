@@ -100,6 +100,7 @@
         height: 25vh;
         width: 30vh;
         margin: 10px 10px;
+        margin-left:20px;
      }
 
     .img-text h3 {
@@ -123,23 +124,23 @@
     .headerContainer h1 {
         
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 700;
         margin-right: 30px;
-        color: white;
+    
     }
 
     .headerContainer p {
         font-size: 20px;
-        font-weight: 600;
-        color:white;
+        font-weight: 700;
+      
 
     }
 
     .headerContainer button {
-        font-size: 15px;
+        font-size: 18px;
         background-color: red;
         color: white;
-        padding: 20px 20px;
+        padding: 10px 20px;
         border: none;
         border-radius: 10px;
         font-weight: 500;
