@@ -109,7 +109,7 @@
     }
 
     .home {
-        height: 50vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: left;
@@ -121,17 +121,17 @@
     }
 
     .headerContainer h1 {
+        
         font-size: 25px;
         font-weight: 600;
         margin-right: 30px;
-        color: red;
+        color: white;
     }
 
     .headerContainer p {
         font-size: 20px;
         font-weight: 600;
-
-        /* margin-left: auto; */
+        color:white;
 
     }
 
@@ -139,7 +139,7 @@
         font-size: 15px;
         background-color: red;
         color: white;
-        padding: 10px 20px;
+        padding: 20px 20px;
         border: none;
         border-radius: 10px;
         font-weight: 500;
