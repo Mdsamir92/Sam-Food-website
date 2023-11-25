@@ -7,14 +7,6 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
 
-//   <div className='col-md-6 '>
-//   <div className='home'>
-//   <h1>your favourite food! <br/> Delivered Hot and fresh </h1>
- 
-//  <button>order now</button>
-//   </div>
-
-//   </div>
 <div >
     <div className="home">
     <div className="headerContainer">
