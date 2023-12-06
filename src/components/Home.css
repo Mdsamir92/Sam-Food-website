@@ -55,7 +55,7 @@
 
 .working-time {
 
-    margin: 60px 10px;
+    margin: 30px 10px;
 
 }
 
@@ -76,12 +76,11 @@
     .img-text h3 {
         font-size: 20px;
         font-weight: 500;
-/*         margin: 10px 30px; */
         text-align: center;
     }
 
     .home {
-        height: 50vh;
+        height: 60vh;
         width:100%;
         display: flex;
         justify-content: center;
