@@ -18,7 +18,7 @@ function ContactUs() {
 
       <Form action="https://formspree.io/f/xeqdqalv" method="POST" className='form' >
           <div className='input-filed'>
-            <h5>Send you Details</h5>
+            <h5>Send your Details</h5>
             <Form.Group as={Row} className="mb-3 " controlId="formHorizontalName" >
               <Form.Label column sm={8} >
                 Name
