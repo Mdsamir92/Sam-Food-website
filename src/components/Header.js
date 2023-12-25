@@ -199,7 +199,7 @@ const Header = () => {
                                         })
                                     }
                                     <p className='text-center'>Total :₹ {price} 
-                                    <a  href='/placeOrder'>
+                                    <a  href='https://rzp.io/l/pUeeNLp'>
                                     <Button type='submit' sx={{color:"black",display:"flex"}}  variant='contained'>Place order</Button></a>
                                     </p>
                                 </tbody>
