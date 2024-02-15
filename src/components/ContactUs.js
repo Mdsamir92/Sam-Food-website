@@ -22,7 +22,7 @@ function ContactUs() {
         <input type="number" id="number" placeholder="Enter number..." maxlength="10" name="number" required
           autocomplete="off" /><br/>
         <p id="numberError" class="error"></p>
-        <textarea name="mesage" id="" placeholder="write message here..." cols="35" rows="6"></textarea> <br/>
+        <textarea name="mesage" id="" placeholder="write message here..." cols="25" rows="6"></textarea> <br/>
         <button type="submit" class="btn btn-warning">Submit</button>
       </form>
 
