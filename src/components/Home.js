@@ -1,67 +1,167 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Img } from './HomeImg'
 import "./Home.css";
+import { Link } from 'react-router-dom';
 
 function Home() {
 
 
-  const [activeImg,setActiveImg] = useState(0);
+  const [activeImg, setActiveImg] = useState(0);
 
-  const handlePrevClick = ()=>{
-      setActiveImg(!activeImg ? Img.length -1 :activeImg -1)}
+  const handlePrevClick = () => {
+    setActiveImg(!activeImg ? Img.length - 1 : activeImg - 1)
+  }
 
-  const handleNextClick = () =>{
-      setActiveImg((activeImg +1 ) % Img.length) }
+  const handleNextClick = () => {
+    setActiveImg((activeImg + 1) % Img.length)
+  }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      handleNextClick();
+    }, 2000)
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [activeImg]);
 
 
-  useEffect(() =>{
-    const timer =   setTimeout(()=>{
-       handleNextClick();
-      },2000);
-      return  () => {
-          clearTimeout(timer)
-      }
-  },[activeImg]);
+
   return (
 
-<div >
-        <div className="home">
-       <svg onClick= {handlePrevClick} xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-        <img  src={Img[activeImg]} alt="wallpaper" />
-        <svg onClick={handleNextClick }  xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>  
-    </div>
+
+    <div>
+      <div className="home" data-aos="flip-right" data-aos-duration="1000"  data-aos-easing="linear">
+        <button className='slider-l' onClick={handlePrevClick} >&lt;</button>
+        <img src={Img[activeImg]} alt="wallpaper" />
+        <button className='slider-r' onClick={handleNextClick} >&gt;</button>
+      </div>
 
 
-  <div className='row  working-time'>
-    <div className='col-md-3  container '>
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+      <div className="text-center mt-5"  data-aos="fade-down" data-aos-duration="1000"  data-aos-easing="linear">
+        <h2>What's on your mind?</h2>
+      </div>
+      <div className='container row  dishes brands-row'  data-aos="fade-up" data-aos-duration="1200"  data-aos-easing="linear">
+        <div className='col-md-2'>
+        <Link to="/menu">
+          <img height={150} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Momos.png' />
+        </Link>
+        </div>
+        <div className='col-md-2'>
+        <Link to="/menu">
+          <img height={150} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Rolls.png' />
+        </Link>
+        </div>
+        <div className='col-md-2'>
+        <Link to="/menu">
+          <img height={150} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png' />
+          </Link>
+        </div>
+        <div className='col-md-2'>
+        <Link to="/menu">
+          <img height={150} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png' />
+          </Link>
+        </div>
+        <div className='col-md-2'>
+        <Link to="/menu">
+          <img height={150} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029856/PC_Creative%20refresh/3D_bau/banners_new/Pizza.png' />
+          </Link>
+        </div>
+        <div className='col-md-2'>
+        <Link to="/menu">
+          <img height={150} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Cakes.png' />
+          </Link>
+        </div>
+      
 
-    <p style={{fontWeight:"bold"}}>10.00 am - 11-pm</p>
-    <p>Working hours</p>
-    </div>
-    <div className='col-md-3  container'>
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-    <p style={{fontWeight:"bold"}}>Phone Number</p>
-    <p>033-1800383</p>
-    </div>
-    <div className='col-md-3  container'>
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-    <p style={{fontWeight:"bold"}}>Location</p>
-    <p>Kolkata</p>
-    </div>
-  </div>
-  
-  <div className='row container '>
-  <div className='col-md-4 burger '>
-    <img src='https://img.freepik.com/premium-photo/closeup-juicy-burger-with-fries-it-look-very-delicious-big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-red-onion_620624-6875.jpg'/>
-  </div>
-<div className='col-md-4 img-text'> 
-<h3>Food Is An Important Part of Balanced Diet</h3>
+      </div>
 
-</div>
-</div>
-</div>
+      {/* our service  */}
+      <div className="text-center mt-5" data-aos="fade-down" data-aos-duration="1000"  data-aos-easing="linear">
+        <h1>About Us</h1>
+      </div>
+      <div className="about"  data-aos="flip-up" data-aos-duration="1200"  data-aos-easing="linear">
+
+        <div className="about-child">
+          <h1>👨‍🍳</h1>
+          <h2>100+</h2>
+          <p>Master Chiefs</p>
+        </div>
+        <div className="about-child">
+          <h1>🏍</h1>
+          <h2>24 Hours</h2>
+          <p>fastest Delivery</p>
+        </div>
+        <div className="about-child">
+          <h1>🥧</h1>
+          <h2>100% </h2>
+          <p>Hygiene Food</p>
+        </div>
+        <div className="about-child">
+          <h2>📞</h2>
+          <h1>24 X 7</h1>
+          <p>Technical Support</p>
+        </div>
+      </div>
+
+
+      <div className='row container home-sec2'>
+        <div className='container col-md-4 section-img' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <img height={400} src='https://i.pinimg.com/564x/fd/b4/7d/fdb47d9d3bfca137866cd9ee881a0117.jpg' />
+        </div>
+        <div className='col-md-4 img-text' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <h3>YOUR DELICIOUS FOOD HERE</h3>
+          <p>At <span>Sam</span> Restaurant, Having a tour around the restaurant, I noticed that the workers are friendly and able to serve the large number of customers. The guests are satisfied with the services they get from this restaurant. The staff does not ignore calls and they talk in a professional and courteous manner. Listening to the staff responding to the guests over the phone shows that the staff has respect for the customers</p>
+        </div>
+
+      </div>
+
+      <div className='row container mt-4 home-sec2 '>
+
+        <div className='col-md-4 img-text' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <h3>YOUR DELICIOUS FOOD HERE</h3>
+          <p>At <span>Sam</span> Restaurant, Having a tour around the restaurant, I noticed that the workers are friendly and able to serve the large number of customers. The guests are satisfied with the services they get from this restaurant. The staff does not ignore calls and they talk in a professional and courteous manner. Listening to the staff responding to the guests over the phone shows that the staff has respect for the customers</p>
+        </div>
+        <div className='container col-md-4 section-img2 ' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <img height={400} src='https://i.pinimg.com/564x/8a/b0/9b/8ab09b86d26a0a15c902ad6b69baf90d.jpg' />
+        </div>
+
+      </div>
+
+
+ 
+        <div className="text-center mt-5 brand-title  mb-5" data-aos="fade-down" data-aos-duration="1000"  data-aos-easing="linear">
+        <h2 class="h5-title">Trusted by 50+ Companies</h2>
+      </div>
+      <div className='container row brands-row' data-aos="zoom-in" data-aos-duration="1400"  data-aos-easing="linear">
+        <div className='col-md-2 companies  '>
+       
+        <img height={150} src="./images/brands/b1.png" alt="" />
+       
+        </div>
+        <div className='col-md-2 companies '>
+       
+        <img height={150} src="./images/brands/b2.png" alt="" />       
+        </div>
+        <div className='col-md-2 companies '>
+       
+        <img height={150} src="./images/brands/b3.png" alt="" />         
+        </div>
+        <div className='col-md-2 companies '>
+        <img height={150} src="./images/brands/b4.png" alt="" />           
+        </div>
+        <div className='col-md-2 companies '>
+        <img height={150} src="./images/brands/b5.png" alt="" />           
+        </div>
+        <div className='col-md-2 companies '>
+        <img height={150} src="./images/brands/b6.png" alt="" />           
+        </div>
+      
+
+      </div>
+
+    </div>
   )
 }
 
-export default Home;
+export default Home
