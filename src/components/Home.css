@@ -23,39 +23,177 @@
     scroll-behavior: smooth;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.home img {
+    height: 90vh;
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 5px;
+    scroll-behavior: smooth;
+    transition: .5s linear;
+}
+
+
+
+.slider-l {
+    position: relative;
+    left: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 40px;
+    font-weight: 500;
+    color: pink;
 
 }
-.home img{
-    height: 100vh;
-    width:100%;
+
+.slider-r {
+    position: relative;
+    right: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 40px;
+    font-weight: 500;
+    color: pink;
 }
-.home svg{
+.dishes img{
+    transition: .5s linear;
+}
+.dishes img:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+ 
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 10px 0px;
+    margin: 40px;
+    /* background: linear-gradient(145deg, #e6e6e6, #ffffff); */
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+
+
+}
+
+.about-child {
+    border-right: 3px solid black;
+    font-size: 20px;
     cursor: pointer;
+    transition: .3s ease-in;
 }
 
+.about-child:hover {
+    color: red;
+    transform: scale(1.1);
 
-.burger img {
+
+
+}
+
+.about-child:last-child {
+    border: none;
+}
+
+.section-img img {
     margin-top: 30px;
-    border-radius: 20%;
-  
+    border-radius: 20px;
+    transition: .3s linear;
+}
+
+.section-img2 img {
+    margin-top: 30px;
+    border-radius: 20px;
+    position: relative;
+    left: 30%;
+    transition: .3s linear;
+
+}
+.section-img2 img:hover{
+    transform: scale(1.1);
+}
+
+.section-img img:hover{
+    transform: scale(1.1);
+}
+
+.brands-row {
+    margin-left: 35px;
+
+}
+
+/* .brands-box img {
+    height: 150px;
+} */
+/* 
+.brands-box {
+    margin: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+} */
+
+.companies {
+    transition: .4s ease;
+    border-radius: 15px;
+    cursor: pointer;
+
+
+}
+
+.companies:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+    filter: brightness(0.5);
+    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+}
+
+.brands-box:hover {
+
+    opacity: 0.9;
+    transform: scale(1.1);
+    filter: brightness(0.5);
+}
+
+.brand-title .h5-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.7;
 }
 
 .img-text {
     margin-top: 30px;
     margin-left: auto;
-  
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 20px
 }
 
-.working-time {
-    margin: 30px 10px;
+.img-text p {
+    text-align: justify;
 }
 
+.img-text h3 {
+    background-image: linear-gradient(90deg, red, black, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+
+.img-text span {
+    color: yellow;
+    background: #000;
+    font-weight: 600;
+
+}
 
 @media only screen and (max-width:900px) {
 
@@ -63,12 +201,74 @@
         font-size: 25px;
         font-weight: 300;
     }
+    .home img {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
 
-    .burger img {
-        height: 25vh;
-        width: 30vh;
-        margin: 10px 10px;
-     }
+    }
+    .home-sec-2 img {
+        height: 45vh;
+        width: 90%;
+        border-radius: 10%;
+        margin-left: 15px;
+    }
+
+    .home-sec-2 p {
+        font-size: 15px;
+    }
+
+    .home-sec-text {
+        margin-left: 15px;
+    }
+
+    .brands-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+    .brands-row {
+        margin-left:0 ;
+    
+    }
+    /* .brand-title{
+        margin-top: 40px;
+        font-size: 20px;
+    } */
+    .brand-title .h5-title {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .companies img {
+        height: 80px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    .about-child {
+        font-size: 18px;
+    }
+
+    .about-child:last-child {
+        border-right: 3px solid black;
+
+    }
+
+    .section-img2 img {
+
+        position: relative;
+        left: 0;
+
+    }
 
     .img-text h3 {
         font-size: 20px;
@@ -76,17 +276,40 @@
         text-align: center;
     }
 
-    .home img{
-        height: 60vh;
-        width:100%;
-        display: flex;
-        justify-content: center;
- 
-    }
-    .working-time {
+
+
+    /* .working-time {
+
         margin: 60px 10px;
+
     }
+
+    .headerContainer h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-right: 30px;
+        color: red;
+    }
+
+    .headerContainer p {
+        font-size: 20px;
+        font-weight: 600;
+
+        /* margin-left: auto; */
+
+    /* }
+
+    .headerContainer button {
+        font-size: 15px;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+
+    }  */
 
 
 }
-
