@@ -1,22 +1,19 @@
-
-.container{
-    text-align: center;
-    
-}
 .card_style{
     cursor: pointer;
-    transition: .3s;
+    transition: .3s linear;
+    
  
+}
+.card_style:hover{
+    /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082); */
+    transform: scale(1.1);
+    box-shadow: -10px 10px 10px 5px grey;
 }
 
   .smalltrash{
       display: none;
   }
   
-  
-  .card_style:hover{
-      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
-  }
   
   .iteamsdetails{
       max-width: 800px;
@@ -41,44 +38,47 @@
   .rating{
       background-color: green;
   }
+
   .nav-menu{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
+
 
 }
 .nav-menu li{
     margin: 0px 15px;
     padding-top: 10px;
     padding-right:10px ;
-   
+    transition:all .5s linear;
 }
 .nav-menu li a{
     text-decoration: none;
     color:black;
     font-weight: 600;
-    transform:translateX(5px);
-    transition:all 400ms;
-   }
-   .nav-menu li a:hover{
-    text-decoration: none;
-    color:blue;
   
    }
+ 
+   .nav-menu li a:hover{
+   transition: .3s ease-in-out;
+    color:rgb(219, 42, 160);
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.568);
+   
+    }
 
 .contact-inputs{
     padding-right: 10px;
     
 }
 .mobile-menu{
-    list-style: none;
+    list-style: none; 
    
 }
 .mobile-menu li a{
     text-decoration: none;
     margin-right: 10px;
+  
 }
 .mobile-menu li{
     margin: 30px;
@@ -87,12 +87,18 @@
 .searchIcon{
     position: absolute;
     margin-top: 5px;
+    
      
 }
 
 .input{
- padding-left:30px ;
+    padding-left:40px ;
+   
+   }
 
+.container{
+    text-align: center;
+    
 }
 
   @media (max-width:768px){
@@ -110,6 +116,7 @@
    
       .input{
         padding-left:35px ;
+        
        
     }
     .button_div Button{
@@ -155,8 +162,5 @@
     margin-left: 4px;
     
 }
-
-
-
 
 }
