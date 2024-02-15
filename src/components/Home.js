@@ -80,30 +80,29 @@ function Home() {
       <div className="text-center mt-5" data-aos="fade-down" data-aos-duration="1000"  data-aos-easing="linear">
         <h1>About Us</h1>
       </div>
-      <div className="about"  data-aos="flip-up" data-aos-duration="1200"  data-aos-easing="linear">
+         <div className="about"  >
 
-        <div className="about-child">
+        <div className="about-child" data-aos="flip-up" data-aos-duration="1200"  data-aos-easing="linear">
           <h1>👨‍🍳</h1>
           <h2>100+</h2>
           <p>Master Chiefs</p>
         </div>
-        <div className="about-child">
+        <div className="about-child" data-aos="flip-up" data-aos-duration="1200"  data-aos-easing="linear">
           <h1>🏍</h1>
           <h2>24 Hours</h2>
           <p>fastest Delivery</p>
         </div>
-        <div className="about-child">
+        <div className="about-child" data-aos="flip-up" data-aos-duration="1200"  data-aos-easing="linear">
           <h1>🥧</h1>
           <h2>100% </h2>
           <p>Hygiene Food</p>
         </div>
-        <div className="about-child">
+        <div className="about-child" data-aos="flip-up" data-aos-duration="1200"  data-aos-easing="linear">
           <h2>📞</h2>
           <h1>24 X 7</h1>
           <p>Technical Support</p>
         </div>
       </div>
-
 
       <div className='row container home-sec2'>
         <div className='container col-md-4 section-img' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
