@@ -31,7 +31,7 @@ const Cards = () => {
   
 
   return (
-    <div className='container mt-3'>
+    <div className= 'container mt-3'>
       <h2 style={{textAlign:"center",marginTop:"70px"}}>Order your food now...</h2>
      
       <div style={{display:"grid",placeItems:"center"}}>
@@ -45,22 +45,22 @@ const Cards = () => {
              </Box>
              </div>
 
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex justify-content-center align-items-center  ">
         {
           data.filter((element)=>{
    if(element === "") {
     return element;
    } 
    else{
-    return(element.rname.toLowerCase().includes(search)) 
+    return(element.dishName.toLowerCase().includes(search)) 
    }
   }).map((element, id) => {
             return (
               <>
-                <Card key={id} style={{ width: '18rem',border:"none" }} className="mx-3 mt-4 card_style">
-                  <Card.Img variant="top" src={element.imgdata} style={{height:"15rem"}} className="mt-3" />
-                  <Card.Body>
-                    <Card.Title>{element.rname}</Card.Title>
+                <Card key={id} style={{ width: '15rem',border:"none",}} className="mx-2 mt-4 card_style">
+                  <Card.Img variant="top" src={element.imgdata} style={{height:"12rem"}} className="mt-3" />
+                  <Card.Body >
+                    <Card.Title>{element.dishName}</Card.Title>
                     <Card.Text>
                     Price : ₹ {element.price}
                     </Card.Text>
@@ -68,7 +68,6 @@ const Cards = () => {
                     <Button variant="primary"  onClick={()=> send(element)}
                      className='col-lg-12'>Add to Cart</Button>
                     </div>
-                  
                   </Card.Body>
                 </Card>
               </>
