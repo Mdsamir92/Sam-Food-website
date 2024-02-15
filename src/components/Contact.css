@@ -161,7 +161,9 @@ textarea {
         margin-right: 40px;
 
     }
-
+  input{
+      width:100℅;
+  }
     .input-filed h5 {
         font-size: 18px;
     }
