@@ -31,7 +31,7 @@ const Header = () => {
      
       //menu drawer for mobile view
       const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" ,mt:4}}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" ,mt:4, }}>
           <Typography color="black" variant='h6' component="div" sx={{ flexGrow: "1", width: 250 }}>
          
             Sam Restaurant   <FastFoodIcon /></Typography>
@@ -53,7 +53,6 @@ const Header = () => {
                 </li>
                 </ul>
                
-
         </Box>
       )
 
@@ -100,29 +99,28 @@ const Header = () => {
         <AppBar component={"nav"} sx={{ bgcolor: "gold" }}>
           <Toolbar>
          
-            <Typography className='logo-name' color="black" variant='h6' component="div" sx={{ flexGrow: "1" }}>
+            <Typography className='logo-name' color="black" variant='h6' component="div" sx={{ flexGrow: "1" }} data-aos="fade-right" data-aos-duration="1400"  data-aos-easing="linear">
              Sam Restaurant  <FastFoodIcon /> </Typography>
            
 
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box sx={{ display: { xs: "none", sm: "block"  } }}>
           
               <ul className='nav-menu'>
 
-                <li>
+                <li  data-aos="fade-down" data-aos-duration="1000"  data-aos-easing="linear">
                   <Link to={"/"} >Home</Link>
                 </li>
-                <li>
+                <li  data-aos="fade-down" data-aos-duration="1200"  data-aos-easing="linear">
                   <Link to={"/menu"}>Menu</Link>
                 </li>
                 
-                <li>
+                <li  data-aos="fade-down" data-aos-duration="1400"  data-aos-easing="linear">
                   <Link to={"/contact"}>ContactUs</Link>
                 </li>
                  
             </ul>
             </Box>
             
-        
 
                   <Badge badgeContent={getdata.length} color="primary"
                         id="basic-button"
@@ -134,7 +132,7 @@ const Header = () => {
                   </Badge>
 
                     <IconButton color='inherit' aria-label='open drawer' edge="start"
-                     sx={{  display: { sm: "none" } }}
+                     sx={{mr:2 , display: { sm: "none" } }}
                      onClick={handleDrawerToggle}>
                      <MenuIcon style={{color:"black",marginLeft:"20px"}} />
                    </IconButton>
