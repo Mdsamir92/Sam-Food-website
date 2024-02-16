@@ -130,7 +130,9 @@
   .footer-col-last input {
     padding: 10px 0px;
   }
-
+footer-col-last {
+    padding-left:15px;
+}
   
 
   .social-icons i {
