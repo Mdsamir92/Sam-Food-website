@@ -129,10 +129,8 @@
 
   .footer-col-last input {
     padding: 10px 0px;
+      margin-left:15px
   }
-footer-col-last {
-    margin-left:15px;
-}
   
 
   .social-icons i {
