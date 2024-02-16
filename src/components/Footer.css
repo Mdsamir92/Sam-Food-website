@@ -115,7 +115,7 @@
   @media(max-width:768px){
     
   .footer {
-    text-align: center;
+    text-align:left;
   }
   
   .footer-sam p {
