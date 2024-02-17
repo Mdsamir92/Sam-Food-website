@@ -80,6 +80,8 @@
 .mobile-menu li a{
     text-decoration: none;
     margin-right: 10px;
+    color: red;
+    font-weight: 600;
   
 }
 .mobile-menu li{
