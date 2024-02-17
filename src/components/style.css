@@ -75,6 +75,7 @@
 }
 .mobile-menu{
     list-style: none; 
+   transition: .5s linear;
    
 }
 .mobile-menu li a{
@@ -86,6 +87,7 @@
 }
 .mobile-menu li{
     margin: 30px;
+     transition: .3s linear;
 }
 
 .searchIcon{
