@@ -134,7 +134,9 @@ const Header = () => {
                     <IconButton color='inherit' aria-label='open drawer' edge="start"
                      sx={{mr:2 , display: { sm: "none" } }}
                      onClick={handleDrawerToggle}>
-                     <MenuIcon style={{color:"black",marginLeft:"20px"}} />
+                     {/* <MenuIcon style={{color:"black",marginLeft:"20px"}} /> */}
+                     <i className="fi fi-br-bars-staggered"  style={{color:"black",marginLeft:"25px"}}></i>
+                  
                    </IconButton>
 
           </Toolbar>
