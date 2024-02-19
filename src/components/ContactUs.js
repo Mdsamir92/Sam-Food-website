@@ -31,8 +31,8 @@ function ContactUs() {
   </div>
 
        <div >
-        <div className='grid'  data-aos="zoom-in" data-aos-duration="1400"  data-aos-easing="linear">
-          <div className="grid_card">
+        <div className='grid'  >
+          <div className="grid_card" data-aos="zoom-in" data-aos-duration="1000"  data-aos-easing="linear">
             <i> 💌 </i>
             <h2>Email</h2>
             <p>Monday to Friday Expected </p>
@@ -40,14 +40,14 @@ function ContactUs() {
             <Link to="mailto:mdsamir13968@gmail.com">  Send Email <span>-&gt;</span></Link>
           </div>
 
-          <div className="grid_card">
+          <div className="grid_card" data-aos="zoom-in" data-aos-duration="1200"  data-aos-easing="linear">
             <i> 📱 </i>
             <h2>Live Chat</h2>
             <p>Weekdays: 9 AM — 6 PM ET</p>
             <p className="last_para">response time: 6 hours </p>
             <Link to="https://www.instagram.com/md_samir92"> Chat Now <span>-&gt;</span></Link>
           </div>
-          <div className="grid_card">
+          <div className="grid_card" data-aos="zoom-in" data-aos-duration="1400"  data-aos-easing="linear">
             <i>  ⌨</i>
             <h2>Community</h2>
             <p>Monday to Friday Expected </p>
