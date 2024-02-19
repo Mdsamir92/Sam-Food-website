@@ -44,7 +44,7 @@
     box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
   }
 
-  .footer-col-last::placeholder{
+ ::placeholder{
       padding-left:7px;
   }
   .fa-paper-plane {
