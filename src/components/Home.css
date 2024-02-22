@@ -23,17 +23,45 @@
     scroll-behavior: smooth;
 }
 
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .home img {
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     border-radius: 30px;
-    margin-top: 5px;
+    margin-top: 15px;
     scroll-behavior: smooth;
     transition: .5s linear;
 }
 
 
+
+.slider-l {
+    position: relative;
+    left: 5%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 40px;
+    font-weight: 500;
+    color: pink;
+
+}
+
+.slider-r {
+    position: relative;
+    right: 5%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 40px;
+    font-weight: 500;
+    color: pink;
+}
 .dishes img{
     transition: .5s linear;
 }
@@ -66,6 +94,9 @@
 .about-child:hover {
     color: red;
     transform: scale(1.1);
+
+
+
 }
 
 .about-child:last-child {
@@ -162,10 +193,7 @@
     }
     .home img {
         height: 70vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-top: 0px;
+        margin-top: 0;
 
     }
     .home-sec-2 img {
@@ -193,6 +221,7 @@
         margin-left:0 ;
     
     }
+
     .brand-title .h5-title {
         margin-top: 40px;
         font-size: 20px;
@@ -215,12 +244,14 @@
 
     .about-child:last-child {
         border-right: 3px solid black;
+
     }
 
     .section-img2 img {
 
         position: relative;
         left: 0;
+
     }
 
     .img-text h3 {
@@ -228,8 +259,6 @@
         font-weight: 500;
         text-align: center;
     }
-
-
 
 
 }
