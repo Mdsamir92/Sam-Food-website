@@ -42,7 +42,7 @@
 
 .slider-l {
     position: relative;
-    left: 5%;
+    left: 8%;
     border: none;
     outline: none;
     background: transparent;
@@ -54,7 +54,7 @@
 
 .slider-r {
     position: relative;
-    right: 5%;
+    right: 8%;
     border: none;
     outline: none;
     background: transparent;
