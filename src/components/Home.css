@@ -34,29 +34,6 @@
 }
 
 
-
-.slider-l {
-    position: relative;
-    left: 8%;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 40px;
-    font-weight: 500;
-    color: pink;
-
-}
-
-.slider-r {
-    position: relative;
-    right: 8%;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 40px;
-    font-weight: 500;
-    color: pink;
-}
 .dishes img{
     transition: .5s linear;
 }
@@ -89,9 +66,6 @@
 .about-child:hover {
     color: red;
     transform: scale(1.1);
-
-
-
 }
 
 .about-child:last-child {
@@ -124,21 +98,6 @@
     margin-left: 35px;
 
 }
-
-/* .brands-box img {
-    height: 150px;
-} */
-/* 
-.brands-box {
-    margin: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .4s ease;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
-} */
 
 .companies {
     transition: .4s ease;
@@ -234,10 +193,6 @@
         margin-left:0 ;
     
     }
-    /* .brand-title{
-        margin-top: 40px;
-        font-size: 20px;
-    } */
     .brand-title .h5-title {
         margin-top: 40px;
         font-size: 20px;
@@ -260,14 +215,12 @@
 
     .about-child:last-child {
         border-right: 3px solid black;
-
     }
 
     .section-img2 img {
 
         position: relative;
         left: 0;
-
     }
 
     .img-text h3 {
@@ -277,39 +230,6 @@
     }
 
 
-
-    /* .working-time {
-
-        margin: 60px 10px;
-
-    }
-
-    .headerContainer h1 {
-        font-size: 25px;
-        font-weight: 600;
-        margin-right: 30px;
-        color: red;
-    }
-
-    .headerContainer p {
-        font-size: 20px;
-        font-weight: 600;
-
-        /* margin-left: auto; */
-
-    /* }
-
-    .headerContainer button {
-        font-size: 15px;
-        background-color: red;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        font-family: 'Roboto', sans-serif;
-
-    }  */
 
 
 }
