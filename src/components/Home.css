@@ -62,6 +62,10 @@
     font-weight: 500;
     color: pink;
 }
+.brands-row {
+    margin-left: 50px;
+
+}
 .dishes img{
     transition: .5s linear;
 }
@@ -95,8 +99,6 @@
     color: red;
     transform: scale(1.1);
 
-
-
 }
 
 .about-child:last-child {
@@ -125,10 +127,7 @@
     transform: scale(1.1);
 }
 
-.brands-row {
-    margin-left: 35px;
 
-}
 
 .companies {
     transition: .4s ease;
