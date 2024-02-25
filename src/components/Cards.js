@@ -65,8 +65,8 @@ const Cards = () => {
                     Price : ₹ {element.price}
                     </Card.Text>
                     <div className="button_div d-flex justify-content-center">
-                    <Button variant="primary"  onClick={()=> send(element)}
-                     className='col-lg-12'>Add to Cart</Button>
+                     <button  onClick={()=> send(element)}
+                     className='col-lg-12 card-btn'>Add to Cart</button>
                     </div>
                   </Card.Body>
                 </Card>
