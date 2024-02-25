@@ -17,7 +17,7 @@
     padding-bottom: 15px;
     width: 50%;
       border-radius: 12px;
-    background: #e0e0e0;
+    background: #e9e2e3;
     box-shadow: inset 5px 5px 7px #afafaf,
                 inset -5px -5px 7px #ffffff;
   
@@ -175,7 +175,7 @@ textarea {
 
     .form-container {
         padding: 30px 20px;
-        width: 100vw;
+        width: 95%;
         margin: 0px;
     }
 
