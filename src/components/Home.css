@@ -63,7 +63,8 @@
     color: pink;
 }
 .brands-row {
-    margin-left: 50px;
+/*     margin-left: 50px; */
+     margin: 0px auto;
 
 }
 .dishes img{
