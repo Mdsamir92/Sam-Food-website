@@ -55,7 +55,7 @@ const Cards = () => {
   }).map((element, id) => {
             return (
               <>
-                <Card key={id} style={{ width: '15rem',border:"none",}} className="mx-2 mt-4 card_style">
+                <Card key={id} style={{ width: '15rem',border:"none",}} className="mx-auto mt-4 card_style">
                   <Card.Img variant="top" src={element.imgdata} style={{height:"12rem"}} className="mt-3" />
                   <Card.Body >
                     <Card.Title>{element.dishName}</Card.Title>
