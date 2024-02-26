@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
 import Cardsdata from './CardsData'
 import "./style.css";
 import { useDispatch } from 'react-redux';
@@ -35,8 +34,7 @@ const Cards = () => {
       <h2 style={{textAlign:"center",marginTop:"70px"}}>Order your food now...</h2>
      
       <div style={{display:"grid",placeItems:"center"}}>
-          <Box className="search" sx={{mt:2,backgroundColor:"pink",width:"28%",position:"relative",borderRadius:"10px",
-            }}>
+          <Box className="search" sx={{mt:2,width:"30%" }}>
              
              <SearchIcon  className='searchIcon' sx={{color:"black",cursor:"pointer"}}/>
              
@@ -65,7 +63,7 @@ const Cards = () => {
                     Price : ₹ {element.price}
                     </Card.Text>
                     <div className="button_div d-flex justify-content-center">
-                     <button  onClick={()=> send(element)}
+                    <button  onClick={()=> send(element)}
                      className='col-lg-12 card-btn'>Add to Cart</button>
                     </div>
                   </Card.Body>
