@@ -68,7 +68,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(getdata));
+    localStorage.setItem('carts', JSON.stringify(getdata));
 }, [getdata])
 
 
