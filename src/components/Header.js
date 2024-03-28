@@ -95,6 +95,10 @@ const Header = () => {
     total();
   }, [total])
 
+useEffect(() => {
+  localStorage.setItem('cart', JSON.stringify(getdata));
+}, [getdata])
+
   return (
 
     <>
