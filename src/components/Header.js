@@ -71,6 +71,7 @@ const Header = () => {
     localStorage.setItem('cart', JSON.stringify(getdata));
 }, [getdata])
 
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -98,7 +99,6 @@ const Header = () => {
   useEffect(() => {
     total();
   }, [total])
-
 
   return (
 
@@ -233,5 +233,3 @@ const Header = () => {
 
 
 export default Header;
-
-
