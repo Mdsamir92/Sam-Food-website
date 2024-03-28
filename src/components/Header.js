@@ -67,7 +67,9 @@ const Header = () => {
 
   const dispatch = useDispatch();
 
-
+  useEffect(() => {
+   localStorage.setItem('cart', JSON.stringify(getdata));
+}, [getdata]);
 
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -94,14 +96,12 @@ const Header = () => {
     setPrice(price);
   };
 
-//   useEffect(() => {
-//    localStorage.setItem('cart', JSON.stringify(getdata));
-// }, [getdata])
+
 
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(getdata));
+  
     total();
-  }, [total,getdata])
+  }, [total])
 
   return (
 
