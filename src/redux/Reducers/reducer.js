@@ -1,5 +1,5 @@
 const INIT_STATE = {
-    carts: []
+  carts:  JSON.parse(localStorage.getItem('cart')) ?? []
 };
 
 
