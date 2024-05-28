@@ -15,8 +15,7 @@ import { Drawer, Box, Divider, Typography, Hidden, IconButton, Button, AppBar, T
 import HouseIcon from '@mui/icons-material/House';
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import ContactsIcon from '@mui/icons-material/Contacts';
-import SearchIcon from '@mui/icons-material/Search';
-
+import {loadStripe} from "@stripe/stripe-js"
 
 
 
@@ -68,8 +67,8 @@ const Header = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-   localStorage.setItem('cart', JSON.stringify(getdata));
-}, [getdata]);
+    localStorage.setItem('cart', JSON.stringify(getdata));
+}, [getdata])
 
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -96,12 +95,37 @@ const Header = () => {
     setPrice(price);
   };
 
-
-
   useEffect(() => {
-  
     total();
   }, [total])
+
+  const makePayment = async () =>{
+  const stripe = await loadStripe("pk_test_51PJrq7SAsLBXBvczXiVynRxyNWMT3tFjtzImELkDLG8K2ROfCoEmlZtucMk90QaRzltFE5jzpozsyxA7xZ6EgJ1s00vDHmRsgC")
+
+   const body = {
+    products:getdata
+   }
+   const headers = {
+    "Content-Type":"application/json"
+   }
+   const response = await fetch("https://login-register-form-go9w.onrender.com/api/create-checkout-session",{
+    method:"POST",
+    headers:headers,
+    body:JSON.stringify(body),
+    
+  });
+  const session = await response.json();
+  console.log(session);
+  const result = await stripe.redirectToCheckout({
+    sessionId:session.id
+  });
+ const cart =  localStorage.removeItem('carts');
+ console.log(cart);
+  if(result.error){
+    console.log(error);
+  }
+
+}
 
   return (
 
@@ -210,8 +234,9 @@ const Header = () => {
                     })
                   }
                   <p className='text-center'>Total :₹ {price}
-                    <a href='https://rzp.io/l/pUeeNLp'>
-                      <Button type='submit' sx={{ color: "black", display: "flex" }} variant='contained'>Place order</Button></a>
+                  
+                      <Button type='submit' onClick={makePayment} sx={{position:"relative",left:"20%", color: "black", display: "flex" }} variant='contained'>Checkout</Button>
+                  
                   </p>
                 </tbody>
               </Table>
