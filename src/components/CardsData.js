@@ -2,7 +2,7 @@ const Cardsdata = [
     {
         id: 1,
         dishName: " Chicken Biryani",
-        imgdata: "https://www.thedeliciouscrescent.com/wp-content/uploads/2019/04/Chicken-Biryani-Square.jpg",
+        imgdata: "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop-500x375.jpg",
         address: "South Indian, Biryani, Mughlai",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
         somedata: " 1175 + order placed from here recently",
@@ -14,7 +14,7 @@ const Cardsdata = [
     {
         id: 2,
         dishName: "Chicken Lolipop",
-        imgdata: "https://jamilghar.com/wp-content/uploads/2022/01/grilled-tandoori-chicken13-scaled.jpeg",
+        imgdata: "https://www.greenchickchop.in/cdn/shop/files/ChickenLollipop_1__result.webp?v=1682587206",
         address: "Street Food",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
         somedata: " 2525 + order placed from here recently",
@@ -39,7 +39,7 @@ const Cardsdata = [
         id: 4,
         dishName: "Chicken Burger",
         imgdata: "https://img.freepik.com/premium-photo/amazing-delicious-cheese-burger_727939-299.jpg",
-        address: "fast foodr",
+        address: "fast food",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
         somedata: " 300 + order placed from here recently",
         price: 100,
