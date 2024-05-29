@@ -1,6 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
-.card_style {
+.card_style img {
     cursor: pointer;
     transition: .3s linear;
 
