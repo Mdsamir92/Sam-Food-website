@@ -22,7 +22,7 @@ import {loadStripe} from "@stripe/stripe-js"
 const Header = () => {
 
   const [mobileopen, setMobileopen] = useState(false);
-
+  const[loading,setLoading] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileopen(!mobileopen)
@@ -108,6 +108,7 @@ const Header = () => {
    const headers = {
     "Content-Type":"application/json"
    }
+     setLoading(true)
    const response = await fetch("https://login-register-form-go9w.onrender.com/api/create-checkout-session",{
     method:"POST",
     headers:headers,
