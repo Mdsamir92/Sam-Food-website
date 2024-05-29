@@ -236,9 +236,8 @@ const Header = () => {
                     })
                   }
                   <p className='text-center'>Total :₹ {price}
-                  
-                      <Button type='submit' onClick={makePayment} sx={{position:"relative",left:"20%", color: "black", display: "flex" }} variant='contained'>Checkout</Button>
-                  
+                <Button type='submit' onClick={makePayment} sx={{position:"relative",left:"20%", color: "black", display: "flex" }}
+                variant='contained'>{loading ? "processing" : "Checkout"}</Button>
                   </p>
                 </tbody>
               </Table>
