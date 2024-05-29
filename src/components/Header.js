@@ -202,7 +202,9 @@ const Header = () => {
                 <thead>
                   <tr>
                     <th>Photo</th>
-                    <th>Item Details</th>
+                
+                  <th>Item Details <span style={{ cursor: 'pointer'}} className='ps-4' onClick={handleClose}>X</span></th>
+
                   </tr>
                 </thead>
                 <tbody>
