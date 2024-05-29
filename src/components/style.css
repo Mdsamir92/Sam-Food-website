@@ -6,15 +6,11 @@
 
 }
 
-.card_style:hover {
-    /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082); */
-    /* transform: scale(1.1);
-    box-shadow: -10px 10px 10px 5px grey; */
+
+.card_style img:hover {
     border-color: #008bf8;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-     transform: scale(1.1);
-     /* box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30); */
-     /* background-image: linear-gradient(163deg, red 0%, #3700ff 100%); */
+    transform: scale(1.1);
  
 }
 
