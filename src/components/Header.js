@@ -158,21 +158,19 @@ const Header = () => {
             </Box>
 
 
-            <Badge badgeContent={getdata.length} color="primary"
+         <Badge badgeContent={getdata.length} color="primary"
               id="basic-button"
               aria-controls={open ? 'basic-menu' : undefined}
               aria-haspopup="true"
               aria-expanded={open ? 'true' : undefined}
-              onClick={handleClick} sx={{ cursor: "pointer" }} >
-              <ShoppingCartIcon sx={{ color: "black", cursor: "pointer" }} />
+              onClick={handleClick} sx={{ cursor: "pointer",marginRight:"25px"  }} >
+              <ShoppingCartIcon sx={{ color: "black", cursor: "pointer"}} />
             </Badge>
 
             <IconButton color='inherit' aria-label='open drawer' edge="start"
-              sx={{ mr: 2, display: { sm: "none" }, transitiom: "all 400ms" }}
+              sx={{ mr:2, display: { sm: "none" }, transitiom: "all 400ms" }}
               onClick={handleDrawerToggle}>
-              {/* <MenuIcon style={{color:"black",marginLeft:"20px"}} /> */}
-              <i className="fi fi-br-bars-staggered" style={{ color: "black", marginLeft: "25px",marginTop:"10px" }}></i>
-
+              <i className="fi fi-br-bars-staggered" style={{ color: "black", marginTop:"10px" }}></i>
             </IconButton>
 
           </Toolbar>
