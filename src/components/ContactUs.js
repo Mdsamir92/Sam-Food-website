@@ -21,7 +21,7 @@ function ContactUs() {
         <input type="email" placeholder="Enter email..." id="email" name="email" required autocomplete="off" /><br/>
         <p id="emailError" class="error"></p>
         <label for="number">Number</label><br/>
-        <input type="number" id="number" placeholder="Enter number... name="number" value={phone} onChange={(e) => setPhone(e.target.value.slice(0,10))} 
+        <input type="number" name="number" placeholder="Enter number..."  value={phone} onChange={(e) => setPhone(e.target.value.slice(0,10))} 
        required autocomplete="off" /><br/>
         <p id="numberError" class="error"></p>
         <textarea name="mesage" id="" placeholder="write message here..." cols="22" rows="6"></textarea> <br/>
