@@ -104,16 +104,65 @@ function Home() {
         </div>
       </div>
 
-      <div className='row container home-sec2'>
-        <div className='container col-md-4 section-img' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <img height={400} src='https://i.pinimg.com/564x/fd/b4/7d/fdb47d9d3bfca137866cd9ee881a0117.jpg' />
-        </div>
-        <div className='col-md-4 img-text' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <h3>YOUR DELICIOUS FOOD HERE</h3>
-          <p>At <span>Sam</span> Restaurant, Having a tour around the restaurant, I noticed that the workers are friendly and able to serve the large number of customers. The guests are satisfied with the services they get from this restaurant. The staff does not ignore calls and they talk in a professional and courteous manner. Listening to the staff responding to the guests over the phone shows that the staff has respect for the customers</p>
+      <div className="text-center mt-5 brand-title  mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear">
+        <h2 class="h5-title">Trusted by 100+ Companies</h2>
+      </div>
+
+    
+      <section className="brands">
+      <div className="brands-container">
+          <img src="./images/brands/b1.png" alt="" />
+          <img src="./images/brands/b2.png" alt="" />
+          <img src="./images/brands/b3.png" alt="" />
+          <img src="./images/brands/b4.png" alt="" />
+          <img src="./images/brands/b5.png" alt="" />
+          <img src="./images/brands/b6.png" alt="" />
+          <img src="./images/brands/b7.png" alt="" />
+          <img src="./images/brands/b8.png" alt="" />
+          <img src="./images/brands/b9.png" alt="" />
+          <img src="./images/brands/b10.png" alt="" />
+          <img src="./images/brands/b11.png" alt="" />
+          <img src="./images/brands/b12.png" alt="" />
+          <img src="./images/brands/b13.png" alt="" />
+          <img src="./images/brands/b14.png" alt="" />
+          <img src="./images/brands/b15.png" alt="" />
+          <img src="./images/brands/b16.png" alt="" />
+          <img src="./images/brands/b17.png" alt="" />
+          <img src="./images/brands/b18.png" alt="" />
+          <img src="./images/brands/b19.png" alt="" />
+          <img src="./images/brands/b20.png" alt="" />
+          <img src="./images/brands/b21.png" alt="" />
+          <img src="./images/brands/b22.png" alt="" />
+          <img src="./images/brands/b23.png" alt="" />
         </div>
 
-      </div>
+        <div className="brands-container">
+          <img src="./images/brands/b1.png" alt="" />
+          <img src="./images/brands/b2.png" alt="" />
+          <img src="./images/brands/b3.png" alt="" />
+          <img src="./images/brands/b4.png" alt="" />
+          <img src="./images/brands/b5.png" alt="" />
+          <img src="./images/brands/b6.png" alt="" />
+          <img src="./images/brands/b7.png" alt="" />
+          <img src="./images/brands/b8.png" alt="" />
+          <img src="./images/brands/b9.png" alt="" />
+          <img src="./images/brands/b10.png" alt="" />
+          <img src="./images/brands/b11.png" alt="" />
+          <img src="./images/brands/b12.png" alt="" />
+          <img src="./images/brands/b13.png" alt="" />
+          <img src="./images/brands/b14.png" alt="" />
+          <img src="./images/brands/b15.png" alt="" />
+          <img src="./images/brands/b16.png" alt="" />
+          <img src="./images/brands/b17.png" alt="" />
+          <img src="./images/brands/b18.png" alt="" />
+          <img src="./images/brands/b19.png" alt="" />
+          <img src="./images/brands/b20.png" alt="" />
+          <img src="./images/brands/b21.png" alt="" />
+          <img src="./images/brands/b22.png" alt="" />
+          <img src="./images/brands/b23.png" alt="" />
+        </div>
+
+      </section>
 
       <div className='row container mt-4 home-sec2 '>
 
@@ -126,39 +175,7 @@ function Home() {
         </div>
 
       </div>
-
-
- 
-        <div className="text-center mt-5 brand-title  mb-5" data-aos="fade-down" data-aos-duration="1000"  data-aos-easing="linear">
-        <h2 class="h5-title">Trusted by 50+ Companies</h2>
-      </div>
-      <div className='container row brands-row' data-aos="zoom-in" data-aos-duration="1400"  data-aos-easing="linear">
-        <div className='col-md-2 companies  '>
-       
-        <img height={150} src="./images/brands/b1.png" alt="" />
-       
-        </div>
-        <div className='col-md-2 companies '>
-       
-        <img height={150} src="./images/brands/b2.png" alt="" />       
-        </div>
-        <div className='col-md-2 companies '>
-       
-        <img height={150} src="./images/brands/b3.png" alt="" />         
-        </div>
-        <div className='col-md-2 companies '>
-        <img height={150} src="./images/brands/b4.png" alt="" />           
-        </div>
-        <div className='col-md-2 companies '>
-        <img height={150} src="./images/brands/b5.png" alt="" />           
-        </div>
-        <div className='col-md-2 companies '>
-        <img height={150} src="./images/brands/b6.png" alt="" />           
-        </div>
-      
-
-      </div>
-
+        
     </div>
   )
 }
