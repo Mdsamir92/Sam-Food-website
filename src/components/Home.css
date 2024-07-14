@@ -185,6 +185,38 @@
 
 }
 
+
+
+.brands{
+    overflow: hidden;
+    display: flex;
+    gap: 5rem;
+    cursor: pointer;
+}
+
+ .brands .brands-container{
+    display: flex;
+    gap: 3rem;
+    animation:brands 20s linear infinite;
+}
+
+@keyframes brands {
+0%{
+    transform: translateX(0%);
+}   
+0%{
+    transform: translateX(-100%);
+}   
+}
+.brands:hover .brands-container{
+    animation-play-state: paused;
+}
+.brands-container img{
+    height: 7rem;
+    width: 10rem;
+}
+
+
 @media only screen and (max-width:900px) {
 
     h1 {
