@@ -14,7 +14,7 @@ function ContactUs() {
     <h2>Get In Touch With Us</h2>
     <div class="form-container">
       <form action="https://api.web3forms.com/submit" method="POST">
-<!-- Replace with your Access Key -->
+
     <input type="hidden" name="access_key" value="d9e21f08-d77d-4e0d-bf4e-db6c1a0ec14f">
         <label for="name">Name</label><br/>
         <input type="text" placeholder="Enter name..." id="name" name="name" required autocomplete="off" />
