@@ -15,7 +15,7 @@ function ContactUs() {
     <div class="form-container">
       <form action="https://api.web3forms.com/submit" method="POST">
 
-    <input type="hidden" name="access_key" value="d9e21f08-d77d-4e0d-bf4e-db6c1a0ec14f">
+    <input type="hidden" name="access_key" value="d9e21f08-d77d-4e0d-bf4e-db6c1a0ec14f" />
         <label for="name">Name</label><br/>
         <input type="text" placeholder="Enter name..." id="name" name="name" required autocomplete="off" />
         <p id="nameError" class="error"></p>
